@@ -29,3 +29,9 @@ The Sync server will be availble at `http://localhost:8001`.
 
 If you wish to run the server on a different port you should set the `FH_PORT`
 environment variable to the port you want the server to run on.
+
+curl -H "content-type: application/json" -X POST -d " \
+ { \
+   \"query\": \"query { allTasks {_id, name, created  }}\" \
+ } \
+" http://localhost:8001/graphql
