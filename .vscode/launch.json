@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "FH_REDIS_HOST": "127.0.0.1",
+                "FH_REDIS_PORT": 6379,
+                "FH_MONGODB_CONN_URL": "mongodb://127.0.0.1:27017"
+            },
+            "program": "${workspaceFolder}/application.js"
+        }
+    ]
+}
